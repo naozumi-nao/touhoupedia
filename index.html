@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Touhoupedia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="jumbotron">
+      <img src="assets/images/touhou-icon.png">
+      <h1>Touhoupedia</h1>
+      <p>Internet Encyclopedia of Touhou Characters</p>
+    </div>
+    <nav>
+      <div class="dropdown">
+        <img src="assets/images/menu.svg" class="drop-btn" onclick="dropdown()">
+      </div>
+      <div id="js-dropdown" class="dropdown-characters">
+        <a href="#reimu">Reimu</a>
+        <a href="#marisa">Marisa</a>
+        <a href="#yukari">Yukari</a>
+        <a href="#joon">Joon</a>
+        <a href="#nitori">Nitori</a>
+      </div>
+      <ul>
+        <li>
+          <a href="#reimu">Reimu</a>
+        </li>
+        <li>
+          <a href="#marisa">Marisa</a>
+        </li>
+        <li>
+          <a href="#yukari">Yukari</a>
+        </li>
+        <li>
+          <a href="#joon">Joon</a>
+        </li>
+        <li>
+          <a href="#nitori">Nitori</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content">
+      <article id="reimu" class="container">
+        <h2>Reimu Hakurei</h2> <hr>
+        <img src="assets/images/reimu.png" alt="reimu hakurei" class="character-potrait reimu-potrait">
+        <img src="assets/images/reimu2.png" alt="reimu hakurei" class="character-potrait reimu-potrait">
+        <img src="assets/images/reimu3.png" alt="reimu hakurei" class="character-potrait reimu-potrait">
+        <div class="image-slider">
+          <img src="assets/images/chevron-left.svg" alt="image-before" id="reimu-before" class="before">
+          <img src="assets/images/chevron-right.svg" alt="image-after" id="reimu-after" class="after">
+        </div>
+        <p class="quotes"><q>Uhhh... Do we have to fight? 'Cause I'd rather not.</q></p>
+        <hr>
+        <section class="specs">
+          <table>
+            <tr>
+              <th>Species</th>
+              <td>Human</td>
+            </tr>
+            <tr>
+              <th>Ability</th>
+              <td>Manipulation of auras</td>
+            </tr>
+            <tr>
+              <th>Occupation</th>
+              <td>Shrine Maiden</td>
+            </tr>
+            <tr>
+              <th>Home</th>
+              <td>Hakurei Shrine</td>
+            </tr>
+          </table>
+        </section>
+        <hr>
+        <p class="description">
+          <strong>Reimu Hakurei</strong> is the iconic protagonist of the Touhou Project series. As the shrine maiden of the Hakurei Shrine, she is responsible for maintaining the delicate balance between the human world and the mystical realm of Gensokyo. Her days are typically mundane, spent cleaning the shrine and dealing with occasional visitors. However, when strange occurrences disrupt the peace of Gensokyo, Reimu is quick to investigate and confront the responsible youkai.
+        </p>
+      </article>
+
+      <article id="marisa" class="container">
+        <h2>Marisa Kirisame</h2> <hr>
+        <img src="assets/images/marisa.png" alt="marisa kirisame" class="character-potrait marisa-potrait">
+        <img src="assets/images/marisa2.png" alt="marisa kirisame" class="character-potrait marisa-potrait">
+        <img src="assets/images/marisa3.png" alt="marisa kirisame" class="character-potrait marisa-potrait">
+        <div class="image-slider">
+          <img src="assets/images/chevron-left.svg" alt="image-before" id="marisa-before" class="before">
+          <img src="assets/images/chevron-right.svg" alt="image-after" id="marisa-after" class="after">
+        </div>
+        <p class="quotes">
+          <q>If it's going to bring me a boring life, I'd rather die!</q>
+        </p>
+        <hr>
+        <section class="specs">
+          <table>
+            <tr>
+              <th>Species</th>
+              <td>Human</td>
+            </tr>
+            <tr>
+              <th>Ability</th>
+              <td>Light & heat magic</td>
+            </tr>
+            <tr>
+              <th>Occupation</th>
+              <td>Magician</td>
+            </tr>
+            <tr>
+              <th>Home</th>
+              <td>Forest of Magic</td>
+            </tr>
+          </table>
+        </section>
+        <hr>
+        <p class="description">
+          <strong>Marisa Kirisame</strong> is a human magician who resides in the Forest of Magic within Gensokyo. Known as an "ordinary magician," she contrasts the spiritual abilities of many other characters with her reliance on learned magic. With a penchant for collecting items, both mundane and magical, Marisa often finds herself entangled in the unusual occurrences that plague Gensokyo. Her adventurous spirit and powerful magic make her a formidable opponent, and she shares a friendly rivalry with Reimu Hakurei, often joining forces to resolve incidents.
+        </p>
+      </article>
+      <article id="yukari" class="container">
+        <h2>Yukari Yakumo</h2> <hr>
+        <img src="assets/images/yukari.png" alt="yukari yakumo" class="character-potrait yukari-potrait">
+        <img src="assets/images/yukari2.png" alt="yukari yakumo" class="character-potrait yukari-potrait">
+        <img src="assets/images/yukari3.png" alt="yukari yakumo" class="character-potrait yukari-potrait">
+        <div class="image-slider">
+          <img src="assets/images/chevron-left.svg" alt="image-before" id="yukari-before" class="before">
+          <img src="assets/images/chevron-right.svg" alt="image-after" id="yukari-after" class="after">
+        </div>
+        <p class="quotes">
+          <q>My weakness is... nothing.</q>
+        </p>
+        <hr>
+        <section class="specs">
+          <table>
+            <tr>
+              <th>Species</th>
+              <td>Youkai</td>
+            </tr>
+            <tr>
+              <th>Ability</th>
+              <td>Manipulation of boundaries</td>
+            </tr>
+            <tr>
+              <th>Occupation</th>
+              <td>Sage</td>
+            </tr>
+            <tr>
+              <th>Home</th>
+              <td>Boundaries of Gensokyo </td>
+            </tr>
+          </table>
+        </section>
+        <hr>
+        <p class="description">
+          <strong>Yukari Yakumo</strong> is a legendary youkai who holds the unique ability to manipulate boundaries. As one of the oldest inhabitants of Gensokyo, she is a figure of both intrigue and fear. With a nonchalant and often condescending demeanor, Yukari observes the world around her with a detached amusement. Her power allows her to control the very fabric of reality, creating portals, illusions, and manipulating space as she pleases.
+        </p>
+      </article>
+      <article id="joon" class="container">
+        <h2>Joon Yorigami</h2> <hr>
+        <img src="assets/images/joon.png" alt="joon yorigami" class="character-potrait joon-potrait">
+        <img src="assets/images/joon2.png" alt="joon yorigami" class="character-potrait joon-potrait">
+        <img src="assets/images/joon3.png" alt="joon yorigami" class="character-potrait joon-potrait">
+        <div class="image-slider">
+          <img src="assets/images/chevron-left.svg" alt="image-before" id="joon-before" class="before">
+          <img src="assets/images/chevron-right.svg" alt="image-after" id="joon-after" class="after">
+        </div>
+        
+        <p class="quotes">
+          <q>Emotions and money-sense are like bears and honey.</q>
+        </p>
+        <hr>
+        <section class="specs">
+          <table>
+            <tr>
+              <th>Species</th>
+              <td>Pestilence God</td>
+            </tr>
+            <tr>
+              <th>Ability</th>
+              <td>Manipulation of financial assets</td>
+            </tr>
+            <tr>
+              <th>Occupation</th>
+              <td>Con Artist</td>
+            </tr>
+            <tr>
+              <th>Home</th>
+              <td>Myouren Temple</td>
+            </tr>
+          </table>
+        </section>
+        <hr>
+        <p class="description">
+          <strong>Joon Yorigami</strong> is a pestilence god, one half of the Yorigami sisters infamous for bringing financial ruin to Gensokyo. Unlike her more reserved sister, Shion, Joon is extravagant and flamboyant, using her charm to manipulate others. Her true nature is cruel and manipulative, enjoying the chaos and suffering she inflicts. While appearing glamorous, she is a symbol of unchecked greed and the detrimental effects of materialism, making her a stark contrast to the typically benevolent characters of the Touhou universe.
+        </p>
+      </article>
+      <article id="nitori" class="container">
+        <h2>Nitori Kawashiro</h2> <hr>
+        <img src="assets/images/nitori.png" alt="nitori kawashiro" class="character-potrait nitori-potrait">
+        <img src="assets/images/nitori2.png" alt="nitori kawashiro" class="character-potrait nitori-potrait">
+        <img src="assets/images/nitori3.png" alt="nitori kawashiro" class="character-potrait nitori-potrait">
+        <div class="image-slider">
+          <img src="assets/images/chevron-left.svg" alt="image-before" id="nitori-before" class="before">
+          <img src="assets/images/chevron-right.svg" alt="image-after" id="nitori-after" class="after">
+        </div>
+        <p class="quotes">
+          <q>Haven't you mistaken an old enemy for a friend?</q>
+        </p>
+        <hr>
+        <section class="specs">
+          <table>
+            <tr>
+              <th>Species</th>
+              <td>Kappa</td>
+            </tr>
+            <tr>
+              <th>Ability</th>
+              <td>Manipulation of Water</td>
+            </tr>
+            <tr>
+              <th>Occupation</th>
+              <td>Engineer</td>
+            </tr>
+            <tr>
+              <th>Home</th>
+              <td>Genbu Ravine</td>
+            </tr>
+          </table>
+        </section>
+        <hr>
+        <p class="description">
+          <strong>Nitori Kawashiro</strong> Nitori Kawashiro
+          is a shy kappa who resides in the Genbu Ravine on Youkai Mountain. Unlike many other youkai, her strength lies not in magic, but in technology and engineering. As a kappa, she possesses the innate ability to manipulate water, which she utilizes creatively in her inventions. Nitori is a brilliant mind, constantly tinkering with new contraptions and gadgets. Her workshop is filled with a variety of strange devices, reflecting her boundless creativity.
+        </p>
+      </article>
+    </div>
+
+    <aside>
+      <article class="profile">
+        <img src="assets/images/selfie.jpg" class="profile-picture">
+        <section class="personal-info">
+          <h2>Bima Adityo Kurniawan</h2>
+          <h3>Rookie Web Developer</h3>
+          <hr>
+          <p>Let's connect:</p>
+          <div id="socials">
+            <a href="https://linkedin.com/in/bimaadityokurniawan/" target="_blank">
+              <img src="assets/images/linkedin.svg" alt="linkedin icon">
+            </a>
+            <a href="https://instagram.com/bimadityo" target="_blank">
+              <img src="assets/images/instagram.svg" alt="instagram icon">
+            </a>
+            <a href="https://github.com/naozumi-nao" target="_blank">
+              <img src="assets/images/github.svg" alt="github icon">
+            </a>
+          </div>
+        </section>
+      </article>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&#169 2024 Touhoupedia by Bima Adityo Kurniawan</p>
+    <p>Made for <a href="https://www.dicoding.com/academies/123-belajar-dasar-pemrograman-web">Dicoding Submission</a></p>
+  </footer>
+
+  <script src="assets/scripts/scripts.js"></script>
+</body>
+</html>

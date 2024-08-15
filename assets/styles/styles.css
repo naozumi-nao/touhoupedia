@@ -1,0 +1,304 @@
+/*color-palette: https://colorhunt.co/palette/dcf2f17fc7d93654860f1035 */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2 {
+  text-align: center;
+  color: #365486;
+}
+
+h3 {
+  text-align: center;
+  color: #7FC7D9;
+}
+
+p {
+  color: #0F1035;
+}
+
+/*================JUMBOTRON====================*/
+.jumbotron {
+  background-color: aliceblue;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: auto;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.jumbotron img {
+  width: 250px;
+  height: 250px;
+}
+
+.jumbotron h1 {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.35rem;
+}
+
+.jumbotron p {
+  margin: 4px;
+}
+
+/*==============NAVIGATION=================*/
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #365486;
+  border-bottom: 5px solid #7FC7D9;
+  color: #DCF2F1;
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400px;
+  text-decoration: none;
+  color:#DCF2F1;
+  transition: all 0.15s;
+}
+
+nav a:hover{
+  font-weight: bold;
+  border-bottom: 1px solid #DCF2F1;
+}
+
+nav ul {
+  padding-inline: 3rem;
+  display: flex;
+  gap: 4rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+/*================DROPDOWN======================*/
+.dropdown img {
+  width: 35px;
+  height: 35px;
+  margin: 0.5rem 1rem;
+  transition: transform 1s;
+}
+
+.dropdown img:hover {
+  transform: rotate(360deg);
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  color: white;
+  padding: 1rem 2rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-characters {
+  display: none;
+  position: absolute;
+  background-color: #DCF2F1;
+  width: 200px;
+  z-index: 1;
+}
+
+.dropdown-characters a {
+  color: #365486;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-characters a:hover {
+  background-color: #7FC7D9;
+}
+
+.show {
+  display: block;
+}
+
+/*===============CONTENT==================*/
+main {
+  margin: 0 16px;
+  padding: 16px;
+  display: flex;
+}
+
+#content {
+  flex: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: justify;
+  gap: 2rem 3rem;
+}
+
+.description {
+  text-indent: 2rem;
+  line-height: 1.8rem;
+}
+
+.character-potrait {
+  height: 300px;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.quotes {
+  text-align: center;
+  color: #365486;
+}
+
+.specs th {
+  color: #365486;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  vertical-align: text-bottom;
+}
+
+.specs td {
+  padding-left: 2rem;
+  padding-bottom: 1.25rem;
+  text-align: left;
+}
+
+.specs+hr {
+  margin-top: -0.5rem;
+}
+
+/*============CHARACTER-CONTAINER-FLEX===========*/
+.container {
+  border: 1px solid #7FC7D9;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+.image-slider {
+  display: flex;
+}
+
+.before, .after {
+  flex: 1;
+  height: 50px;
+  width: 50px;
+}
+
+.before:active, .after:active{
+  background-color: #7FC7D9;
+}
+
+hr {
+  color: #DCF2F1;
+}
+
+/*===============PROFILE ASIDE====================*/
+aside {
+  flex: 25%;
+  border: 1px solid #7FC7D9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  width: 100%;
+  max-width: fit-content;
+  height: fit-content;
+}
+
+.profile-picture {
+  height: 300px;
+  width: 100%;
+  object-fit:cover;
+  border-radius: 40px 40px 0 0;
+}
+
+.personal-info {
+  text-align: center;
+  margin: 8px;
+  padding: 4px 8px;
+}
+
+#socials img {
+  margin: 8px 24px;
+  height: 35px;
+  width: 35px;
+  transition: all 0.2s;
+}
+
+#socials img:hover {
+  margin: 0 22px;
+  height: 40px;
+  width: 40px;
+}
+
+#socials a {
+  text-decoration: none;
+}
+
+/*===============FOOTER==================*/
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*============Viewport================*/
+@media screen and (min-width: 1200px) {
+  .dropdown {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main {
+    flex-flow: column;
+  }
+
+  #content {
+    justify-content: center;
+    justify-items: center;
+  }
+
+  main aside {
+    align-self: center;
+    margin-top: 3rem;
+  }
+
+  .dropdown {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  nav ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
